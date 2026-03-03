@@ -406,7 +406,7 @@ HTML = r"""<!DOCTYPE html>
     flex-shrink: 0;
   }
   header h1 { font-size: 0.95rem; font-weight: 600; color: #fff; flex: 1; }
-  header .sub { font-size: 0.75rem; color: #555; }
+  header .sub { font-size: 0.75rem; color: #aaa; }
 
   /* ── Layout ── */
   .main { display: flex; flex: 1; overflow: hidden; }
@@ -437,7 +437,7 @@ HTML = r"""<!DOCTYPE html>
     font-weight: 700;
     letter-spacing: 0.07em;
     text-transform: uppercase;
-    color: #555;
+    color: #aaa;
     margin-bottom: 5px;
     display: flex;
     align-items: center;
@@ -467,7 +467,7 @@ HTML = r"""<!DOCTYPE html>
     outline: none;
     transition: border-color 0.15s;
   }
-  .addr-input::placeholder { color: #444; }
+  .addr-input::placeholder { color: #666; }
   .addr-input:focus { border-color: #3a3a3a; }
   .addr-input.valid   { border-color: #2a4a2a; }
   .addr-input.invalid { border-color: #4a2a2a; }
@@ -496,8 +496,8 @@ HTML = r"""<!DOCTYPE html>
   .sug-item:last-child { border-bottom: none; }
   .sug-item:hover, .sug-item.active { background: #252525; }
   .sug-item.sug-outside { opacity: 0.45; }
-  .sug-main { display: block; font-size: 0.83rem; color: #ddd; }
-  .sug-sub  { display: block; font-size: 0.72rem; color: #666; margin-top: 2px; }
+  .sug-main { display: block; font-size: 0.83rem; color: #fff; }
+  .sug-sub  { display: block; font-size: 0.72rem; color: #aaa; margin-top: 2px; }
   .sug-tag  {
     font-size: 0.62rem;
     background: #3a1a1a;
@@ -507,7 +507,7 @@ HTML = r"""<!DOCTYPE html>
     margin-left: 6px;
     vertical-align: middle;
   }
-  .sug-empty { padding: 10px 12px; font-size: 0.8rem; color: #555; }
+  .sug-empty { padding: 10px 12px; font-size: 0.8rem; color: #aaa; }
 
   /* ── Validation status ── */
   .addr-status {
@@ -515,15 +515,15 @@ HTML = r"""<!DOCTYPE html>
     margin-top: 4px;
     min-height: 16px;
     padding-left: 2px;
-    color: #555;
+    color: #aaa;
   }
   .addr-status.ok       { color: #4ade80; }
   .addr-status.error    { color: #f87171; }
-  .addr-status.searching { color: #888; }
+  .addr-status.searching { color: #aaa; }
 
   .addr-hint {
     font-size: 0.68rem;
-    color: #3a3a3a;
+    color: #888;
     margin-top: 3px;
     line-height: 1.4;
     padding-left: 2px;
@@ -581,14 +581,14 @@ HTML = r"""<!DOCTYPE html>
   .summary.show { display: block; }
   .sum-row { display: flex; gap: 28px; margin-bottom: 8px; }
   .sum-val   { font-size: 1.5rem; font-weight: 700; color: #4ade80; line-height: 1; }
-  .sum-lbl   { font-size: 0.65rem; color: #555; text-transform: uppercase; letter-spacing: 0.07em; margin-top: 3px; }
-  .sum-meta  { font-size: 0.71rem; color: #444; line-height: 1.6; }
+  .sum-lbl   { font-size: 0.65rem; color: #aaa; text-transform: uppercase; letter-spacing: 0.07em; margin-top: 3px; }
+  .sum-meta  { font-size: 0.71rem; color: #bbb; line-height: 1.6; }
   .dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
   .dot.on  { background: #4ade80; }
   .dot.off { background: #3a3a3a; }
 
   /* ── Section label ── */
-  .sec { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #444; margin: 14px 0 8px; }
+  .sec { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #888; margin: 14px 0 8px; }
 
   /* ── Segments ── */
   .seg-list { list-style: none; }
@@ -617,9 +617,9 @@ HTML = r"""<!DOCTYPE html>
   .seg-icon.exit   { background: #201a08; color: #fbbf24; }
 
   .seg-body { flex: 1; }
-  .seg-hwy    { font-size: 0.85rem; font-weight: 600; color: #e0e0e0; }
-  .seg-action { font-size: 0.74rem; color: #888; margin-top: 2px; line-height: 1.35; }
-  .seg-meta   { font-size: 0.68rem; color: #505050; margin-top: 2px; }
+  .seg-hwy    { font-size: 0.85rem; font-weight: 600; color: #fff; }
+  .seg-action { font-size: 0.74rem; color: #ccc; margin-top: 2px; line-height: 1.35; }
+  .seg-meta   { font-size: 0.68rem; color: #999; margin-top: 2px; }
 
   /* ── Incidents ── */
   .incident {
@@ -630,8 +630,8 @@ HTML = r"""<!DOCTYPE html>
     margin-bottom: 6px;
   }
   .inc-name { font-size: 0.8rem; font-weight: 600; color: #fbbf24; }
-  .inc-desc { font-size: 0.72rem; color: #777; margin-top: 2px; line-height: 1.35; }
-  .no-inc   { font-size: 0.8rem; color: #3a3a3a; padding: 4px 0; }
+  .inc-desc { font-size: 0.72rem; color: #ccc; margin-top: 2px; line-height: 1.35; }
+  .no-inc   { font-size: 0.8rem; color: #888; padding: 4px 0; }
 
   /* ── Error ── */
   .err-bar {
