@@ -1,0 +1,5 @@
+tasks.json
+__pycache__/
+*.pyc
+*.pyo
+.env
